@@ -1,0 +1,71 @@
+
+body{
+  font-family: 'Noto Serif', serif;
+  line-height: 1.8;
+  margin: 0;
+  background-color: indianred;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 450%;
+  color: darkcyan;
+  text-shadow: -2px 0 #E9967A,0 1px #E9967A,1px 0 #E9967A,0 -1px #E9967A;
+
+
+}
+hr{
+  border-color: cadetblue;
+  border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 139, 139, 0),
+    rgba(0, 139, 139, 1), rgba(0, 139, 139, 0));
+
+}
+
+input{
+  border-color: darkcyan;
+  border-style: double;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 110%;
+
+}
+
+#findButton{
+  width: 50px;
+  height: 33px;
+  background-color: darkcyan;
+  color: white;
+  border-style: double;
+  border-color: darksalmon;
+  border-radius: 5px;
+}
+
+#viewResults{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+
+}
+
+.resultsContainer{
+  width: 15%;
+  height: 200px;
+  background-color: mediumaquamarine;
+  padding: 3px;
+  border: 4px solid darkcyan;
+  overflow: scroll;
+  margin-bottom: 10px;
+  border-radius: 50px;
+
+
+}
+
+.thumbnails{
+  padding-top: 5px;
+}

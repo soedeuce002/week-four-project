@@ -2,22 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Noto+Serif" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>iTunes Music</title>
   </head>
   <body>
     <h1>Ree's iTunes Search</h1>
-    <audio></audio>
+    <audio class="musicPlayer" controls="controls" src= " "></audio>
+    <p id='playing'>Now Playing: </p>
       <hr> </hr>
 
       <form>
-        <input type='text' name='artist' placeholder='Search for Artist'
+        <input type='text' name='artist' placeholder='Search for Artist(s)...'
         value=''>
-        <button id='findButton'>Find</button>
+        <button type='button' id='findButton'>Find</button>
 
         <hr></hr>
+        <section id='searchResults'>
+        </section>
 
-      <section id='searchResults'>
+      <section id='viewResults'>
 
       </section>
     <script src='main.js'></script>
