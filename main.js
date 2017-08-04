@@ -29,7 +29,7 @@ findButton.addEventListener('click', function() {
         viewResults.innerHTML +=
           `<div class='resultsContainer'>
             <img class='thumbnails' src=${data.results[i].artworkUrl100}>
-             <div style="display: none;" class="preview">${data.results[i].previewUrl}</div>
+            <div style="display: none;" class="preview">${data.results[i].previewUrl}</div>
             <h5 class='songTitles'>${data.results[i].trackName}</h5>
             <h4 class='artists'>${data.results[i].artistName}</h4>
             </div>`
@@ -42,11 +42,11 @@ findButton.addEventListener('click', function() {
 viewResults.addEventListener("click", function(event) {
   if (event.target && event.target.matches("div.resultsContainer")) {
     let parent = event.target.parentElement;
-    audio.src = parent.getElementsByClassName('preview')[i].innerHTML;
+    audio.src = parent.getElementsByClassName('preview')[0].innerHTML;
     audio.play();
-    let playing = document.querySelector('#playing');
-    let artist = parent.getElementsByClassName('artists')[i].innerHTML;
-    let song = parent.getElementsByClassName('songTitles')[i].innerHTML;
+    let playing = document.querySelector('playing');
+    let artist = parent.getElementsByClassName('artists')[0].innerHTML;
+    let song = parent.getElementsByClassName('songTitles')[0].innerHTML;
 
     playing.innerHTML = `${artist} - ${song}`;
 
